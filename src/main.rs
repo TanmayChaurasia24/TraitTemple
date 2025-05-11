@@ -1,5 +1,5 @@
 mod macros_tut;
-
+mod serde_tut;
 
 // traits are the properties that struct wants to be in it. like rect is the struct that has the trait of shape why? because rect has the area function if it does not have this function then rect does not have the trait of shape. similary for circle also.
 trait Shape {
@@ -39,6 +39,7 @@ fn main() {
     get_area(c);
 
     macros_tut::macros();
+    serde_tut::serde_eg();
 }
 
 // this is the function that only accepts the things that has the trait of shape, rect and circle both has that because both of them has area function in them.
